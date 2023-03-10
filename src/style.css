@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgba(114, 122, 232, 1) 0%,
+    rgba(231, 57, 245, 1) 100%
+  );
+}
+
+.container {
+  position: relative;
+  height: 45rem;
+  width: 30rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 7rem auto;
+}
+
+.login-heading {
+  text-align: center;
+  padding: 3.5rem 0;
+}
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  gap: 1rem;
+  width: 90%;
+}
+
+.input-title {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #6a6a6a;
+}
+
+.input-username,
+.input-password {
+  padding: 1rem;
+  border: none;
+  border-bottom: 2px solid gray;
+  width: 90%;
+  font-size: 1rem;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+input:focus {
+  border-bottom: 2px solid rgba(231, 57, 245, 1);
+}
+
+.password-forget {
+  text-align: end;
+  margin-right: 2rem;
+}
+
+.login-btn {
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgba(114, 122, 232, 1) 0%,
+    rgba(231, 57, 245, 1) 100%
+  );
+  border: 2px solid transparent;
+  padding: 1rem 0;
+  width: 80%;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-radius: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 3rem 10%;
+  transition: background, border, color 0.7s;
+}
+
+.login-btn:hover {
+  background: #ffffff;
+  border: 2px solid rgba(231, 57, 245, 1);
+  color: rgba(231, 57, 245, 1);
+}
+
+.password-forget > a {
+  text-decoration: none;
+  color: grey;
+}
+
+.password-forget > a:hover {
+  color: rgba(114, 122, 232, 1);
+}
+
+.alternative {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.alternative img {
+  transition: transform 0.15s ease-in-out;
+}
+
+.alternative img:hover {
+  transform: translateY(-5px);
+}
+
+.alter-sign-up {
+  text-align: center;
+  margin: 1rem;
+  color: gray;
+}
+
+.alternative img {
+  max-width: 2rem;
+}
